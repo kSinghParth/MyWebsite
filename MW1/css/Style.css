@@ -1,0 +1,86 @@
+body{
+	color: white;
+	font-size: 16px;
+	font-family: Arial;
+	background-color: black;
+	background-image: url('../image/edge.jpg');
+	background-repeat: repeat-y repeat-x;
+	background-position: center; 
+	
+}
+.page{
+	max-width: 85%;
+	margin: 1.5em auto 0.7em auto;
+	
+}
+.block{
+	margin: 3em 0 0px 0;
+	padding:0.5em 1.2em 0.5em 1.2em;
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+}
+h1{
+	font-size: 7em;
+	margin-top: 1em;
+	font-weight: normal;
+}
+li{
+	display: inline-block;
+}
+li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 0.9em;
+	padding: 1em 2em 1em 2em;
+}
+header.secscreen {
+	position: relative;
+	font-size: 11vh;
+}
+span.secscreen{
+	text-decoration: none;
+	color: rgb(255,255,255);
+	font-size: 2em;
+}
+span.secscreen:hover {
+	text-decoration: underline;
+	font-weight: bolder;
+	color: white;
+	font-size: 210%;
+}
+.tagline p span{
+	line-height: 0.5em;
+}
+footer.secscreen {
+	font-size: 9vh;
+}
+footer.secscreen p.royal{
+	line-height: 0.5em;
+	font-size: 0.5em;
+	margin-top: -2em;
+}
+p.playing{
+	font-size: 1.4em;
+	margin-top: 1em;
+	margin-bottom: -2.3em;
+	line-height: 1em;
+}
+#myimage{
+	width: 500px;
+}
+@media screen and (max-width: 800px){
+	#myimage{
+		max-width: 100%;
+	}
+	footer.secscreen {
+		font-size: 10vw;
+	}
+	header.secscreen{
+		font-size: 10vw;
+	}
+
+}
+figure{
+	position: center;
+}

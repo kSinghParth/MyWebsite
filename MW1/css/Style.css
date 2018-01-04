@@ -1,11 +1,8 @@
 body{
-	color: white;
+	color: black;
 	font-size: 16px;
 	font-family: Arial;
-	background-color: black;
-	background-image: url('../image/edge.jpg');
-	background-repeat: repeat-y repeat-x;
-	background-position: center; 
+	background-color: white; 
 	
 }
 .page{
@@ -16,13 +13,24 @@ body{
 .block{
 	margin: 3em 0 0px 0;
 	padding:0.5em 1.2em 0.5em 1.2em;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.1);
 	text-align: center;
+}
+#logo{
+	text-align: left;
+	position: absolute;
+}
+#logo img{
+
+	height: 12vh;
 }
 h1{
 	font-size: 7em;
 	margin-top: 1em;
-	font-weight: normal;
+	font-weight: BOLDER;
+}
+nav{
+	text-align: right;
 }
 li{
 	display: inline-block;
@@ -30,9 +38,44 @@ li{
 li a{
 	text-decoration: none;
 	text-transform: uppercase;
-	color: white;
-	font-size: 0.9em;
-	padding: 1em 2em 1em 2em;
+	color: rgb(50,50,50);
+	margin: 0px 2em 0 2em;
+	font-size: 1.1em;
+	padding: 1em 0em 0em 0em;
+}
+li a:hover{
+	color: black;
+	border-bottom: 2px solid green;
+}
+.comp{
+	height: 1050px;
+}
+code{
+	font-size: 30vw%;
+	position: relative;
+	top: 20vh;
+	margin: auto;
+}
+#comp0{
+	height: 0px;
+}
+#comp0 img{
+	width: 60%;
+}
+#comp1{
+	height: 400px;
+}
+#comp1 img{
+	z-index: 2;
+	top: 370px;
+	position: relative;
+}
+#comp2{
+	height: 400px;
+}
+#comp2 img{
+	top: -30px;
+	position: relative;
 }
 header.secscreen {
 	position: relative;
@@ -40,13 +83,13 @@ header.secscreen {
 }
 span.secscreen{
 	text-decoration: none;
-	color: rgb(255,255,255);
+	color: rgb(0,0,0);
 	font-size: 2em;
 }
 span.secscreen:hover {
 	text-decoration: underline;
 	font-weight: bolder;
-	color: white;
+	color: black;
 	font-size: 210%;
 }
 .tagline p span{
@@ -79,7 +122,15 @@ p.playing{
 	header.secscreen{
 		font-size: 10vw;
 	}
-
+	#logo img{
+	height: 10vw;
+	margin-bottom: 1em
+	}
+	h1{
+	font-size: 5em;
+	margin-top: 1em;
+	font-weight: 600;
+	}
 }
 figure{
 	position: center;

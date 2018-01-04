@@ -10,10 +10,13 @@
 	<link rel="stylesheet" type="text/css" href="css/Style.css">
 	<link rel="stylesheet" type="text/css" media="only screen and (max-width:508px)" href="css/Style_small.css">
 </head>
-<body>
+<body >
 	<div class="page">
 		
 		<header id="header" class="block" role="banner">
+			<div id="logo">
+				<img src="image/ps.svg" alt="">
+			</div>
 			<nav role="navigation">
 				<ul>
 					<li><a href="#About">About</a></li>
@@ -21,10 +24,10 @@
 					<li><a href="#Contact">Contact</a></li>
 				</ul>
 			</nav>
-			<h1>Parth Singh</h1>
-			
+			<h1><span>P</span><span>A</span><span>R</span><span>T</span><span>H</span> <span>S</span><span>I</span><span>N</span><span>G</span><span>H</span></h1>
 		</header><!-- /header -->
-		<div class="block tagline">
+		
+		<div class="block tagline" data-paroller-factor="0.8">
 			<header class="secscreen" ><b>Parth</b>  <i>is..</i> </header>
 						<p><span class="secscreen">thinking</span>, 
 						<span class="secscreen" style="color: rgb(251,64,57);">creating</span>, </p>
@@ -41,6 +44,7 @@
 						<p class="royal">the Royal City</p>
 						</footer>
 		</div>
+		
 		<main role="main">
 			<article id="About" class="block">
 				<h2>About</h2>
@@ -55,6 +59,18 @@
 
 					This website contains my projects and hobbies.
 				</p>
+			</article>
+			<article class="block comp">
+				<div id="comp0" >
+					<div class="codesnip"><CODE class="code">i don't code, i CREATE</CODE></div>
+					<img src="image/mac_screen.png" alt="">
+				</div>
+				<div id="comp1" >
+					<img src="image/7b.png" alt="">
+				</div>
+				<div id="comp2">
+					<img src="image/7a.png">
+				</div>
 			</article>
 			<article id="Work" class="block">
 				<h2>Work</h2>
@@ -109,5 +125,9 @@
 			<p><a href="mailto:parthsingh287@gmail.com" title="mail me">parthsingh287@gmail.com</a></p>
 		</footer>
 	</div>
+	<script src="dist/jquery.js"></script>
+	<script src="dist/jquery.paroller.js"></script>
+	<script src="JS/dist.js"></script>
+
 </body>
 </html>

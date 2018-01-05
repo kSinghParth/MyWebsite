@@ -29,15 +29,15 @@
 		
 		<div class="block tagline" data-paroller-factor="0.8">
 			<header class="secscreen" ><b>Parth</b>  <i>is..</i> </header>
-						<p><span class="secscreen">thinking</span>, 
-						<span class="secscreen" style="color: rgb(251,64,57);">creating</span>, </p>
-						<p><span class="secscreen">observing</span>, 
-						<span class="secscreen">collecting</span>, </p>
-						<p><span class="secscreen" 
+						<div><p><span class="secscreen">thinking</span>, 
+						<span class="secscreen" style="color: rgb(251,64,57);">creating</span>, </p></div>
+						<div><p><span class="secscreen">observing</span>, 
+						<span class="secscreen">collecting</span>, </p></div>
+						<div><p><span class="secscreen" 
 						style="color: rgb(0,168,209);">designing</span>, 
-						<span class="secscreen" >editing</span>, </p>
-						<p><span class="secscreen">adapting</span>, 
-						<span class="secscreen">improvising</span> </p>
+						<span class="secscreen" >editing</span>, </p></div>
+						<div><p><span class="secscreen">adapting</span>, 
+						<span class="secscreen">improvising</span> </p></div>
 						<p class="playing">all while playing around</p>
 						<footer  class="secscreen"><p><i>in</i> <b>
 						Patiala</b></p>
@@ -74,23 +74,24 @@
 			</article>
 			<article id="Work" class="block">
 				<h2>Work</h2>
-				<section>
-					<h3>Technical Projects and Competitions</h3>
-					<dl>
-						<dt>Chess Engine</dt>
-						<dd>Still under progress</dd>
-						<dt>Reverse Coding Runner Up</dt>
-						<dd>An inter college competition on cometitive coding</dd>
-						<dt>Mozilla Maker Party</dt>
-						<dd>A 12 hour hackathon where I participated with our tea to create a website on the Goals Of United Nations</dd>
-						<dt>Weather-App</dt>
-						<dd>An app which displays the weather at the uses location</dd>
-						<dt>Meteor Landing Plotter</dt>
-						<dd>A maps which plots all the meteor landings in real time</dd>
-						<dt>Scientific Calculator</dt>
-						<dd>Basic + Scientific Calculator</dd>
-					</dl>
-					</section>
+
+
+<!--timeline-->
+
+			
+
+
+
+
+
+
+
+
+			
+
+
+
+
 					<section>
 						<h3>Positions of Responsibility</h3>
 						<dl>
@@ -128,6 +129,25 @@
 	<script src="dist/jquery.js"></script>
 	<script src="dist/jquery.paroller.js"></script>
 	<script src="JS/dist.js"></script>
+	<script >
+
+		$(function () {
+
+	$("body").paroller();
+	$("#comp2").paroller({ factor: '1.0', type: 'foreground', direction: 'horizontal' });
+	$(".codesnip").paroller({ factor: '0.1', type: 'foreground', direction: 'horizontal' });
+	$("#logo").paroller({ factor: '-0.2', type: 'foreground' });
+	$("#comp0 img").paroller({ factor: '-0.7', type: 'foreground', direction: 'horizontal' });
+	$("h1").paroller({ factor: '0.5', type: 'foreground'});
+	$("header.secscreen").paroller({ factor: '-1.7', type: 'foreground', direction: 'horizontal' });
+	$("footer.secscreen").paroller({ factor: '-0.3', type: 'foreground', direction: 'horizontal' });
+	$(".block:odd").paroller({ factor: '0.2', type: 'foreground', direction: 'horizontal' });
+	$(".block:even").paroller({ factor: '-0.2', type: 'foreground', direction: 'horizontal' });
+
+});
+
+
+	</script>
 
 </body>
 </html>

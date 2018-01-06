@@ -5,7 +5,25 @@ body{
   font-family: Arial;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+
 	
+}
+.bkg{
+position: absolute;
+z-index: -1;
+width: 100%;
+}
+.bkg1{
+background-color: red;
+height: 900px;
+}
+.bkg2{
+background-color: pink;
+height: 900px;
+}
+.bkg3{
+  background-color: black;
+height: 900px;
 }
 .page{
 	 overflow-x: hidden;
@@ -14,50 +32,68 @@ body{
 	margin: 1.5em auto 0.7em auto;
 	
 }
-.block{
+.block, .blockhead{
 	margin: 3em 0 0px 0;
 	padding:0.5em 1.2em 0.5em 1.2em;
 	background-color: #f7f7f7;
 	text-align: center;
+  padding: 4vw 0;
 }
 #logo{
 	text-align: left;
-	position: absolute;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 #logo img{
 
 	height: 12vh;
 }
-h1{
+#header{
+  background: url('../image/bkg.jpg');
+  background-position: left;
+  background-size: 900px; 
+  background-size: 1500px;
+  height: 700px;
+}
+#header h1{
+  position: relative;
+  color: white;
+  text-align: right;
 	font-size: 7em;
 	margin-top: 1em;
 	font-weight: BOLDER;
 }
-nav{
-	text-align: right;
+h2{
+  
 }
-li{
+nav ul{
+  position: absolute;
+}
+nav li{
 	display: inline-block;
 }
-li a{
+nav ul li a{
 	text-decoration: none;
 	text-transform: uppercase;
-	color: rgb(50,50,50);
+	color: white;
 	margin: 1em 2em 0 2em;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	padding: 0.5em 0.5em;
 
 }
-li a:hover{
-	color: black;
-	border-bottom: 3px solid green;
-	border-top: 3px solid green;
+nav ul li a:hover{
+  color: rgb(100,150,100);
+  text-decoration: none;
+  text-shadow: 1px 0px white;
+	border-bottom: 2px solid rgb(100,150,100);
+  transition: 0.5s;
 }
 .comp{
-	height: 1050px;
+	height: 1200px;
 }
 code{
-	font-size: 80%;
+	font-size: 100%;
 	position: relative;
 	top: 20vh;
 	margin: auto;
@@ -425,6 +461,50 @@ figure{
   background: #F1F4F5;
 }
 
+
+
+
+
+
+
+.example-header {
+  background: #3D4351;
+  color: #FFF;
+  font-weight: 300;
+  padding: 3em 1em;
+  text-align: center;
+}
+.example-header h1 {
+  color: #FFF;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.example-header p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.container-fluid .row {
+  padding: 0 0 4em 0;
+}
+.container-fluid .row:nth-child(even) {
+  background: #F1F4F5;
+}
+
+.example-title {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 3em 0;
+  border-bottom: 1px solid #E4EAEC;
+}
+.example-title p {
+  margin: 0 auto;
+  font-size: 16px;
+  max-width: 400px;
+}
+
 /*==================================
     TIMELINE
 ==================================*/
@@ -483,7 +563,7 @@ figure{
 }
 .timeline-marker:after {
   content: "";
-  width: 0px;
+  width: 3px;
   background: #CCD5DB;
   display: block;
   position: absolute;
@@ -518,7 +598,7 @@ figure{
 .period .timeline-marker:before {
   background: transparent;
   content: "";
-  width: 0px;
+  width: 15px;
   height: auto;
   border: none;
   border-radius: 0;

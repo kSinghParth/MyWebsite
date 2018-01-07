@@ -13,17 +13,38 @@ position: absolute;
 z-index: -1;
 width: 100%;
 }
+.bkgmove{
+  height: 900px;
+}
 .bkg1{
-background-color: red;
-height: 900px;
+background-color: rgb(230,50,50);
 }
 .bkg2{
-background-color: pink;
-height: 900px;
+background-color: orange;
 }
 .bkg3{
-  background-color: black;
-height: 900px;
+  background-color: yellow;
+}
+.bkg4{
+  background-color: green;
+}
+.bkg5{
+  background-color: blue;
+}
+.bkg6{
+  background-color: indigo;
+}
+.bkg7{
+  background-color: blue;
+}
+.bkg8{
+  background-color: pink;
+}
+.bkg9{
+  background-color: magenta;
+}
+.bkg10{
+  background-color: grey;
 }
 .page{
 	 overflow-x: hidden;
@@ -36,7 +57,6 @@ height: 900px;
 	margin: 3em 0 0px 0;
 	padding:0.5em 1.2em 0.5em 1.2em;
 	background-color: #f7f7f7;
-	text-align: center;
   padding: 4vw 0;
 }
 #logo{
@@ -65,7 +85,10 @@ height: 900px;
 	font-weight: BOLDER;
 }
 h2{
-  
+  text-align: center;
+  margin-bottom: 5vw;
+  font-size: 3vw;
+  font-family: Helveetics
 }
 nav ul{
   position: absolute;
@@ -91,6 +114,7 @@ nav ul li a:hover{
 }
 .comp{
 	height: 1200px;
+  text-align: center;
 }
 code{
 	font-size: 100%;
@@ -133,7 +157,8 @@ span.secscreen:hover {
 	font-weight: bolder;
 	font-size: 210%;
 }
-.tagline p span{
+.tagline{
+  text-align: center;
 }
 footer.secscreen {
 	font-size: 9vh;
@@ -149,8 +174,40 @@ p.playing{
 	margin-bottom: -2.3em;
 	line-height: 1em;*/
 }
-#myimage{
-	width: 500px;
+#About{
+  height: 1800px;
+}
+.aboutline{
+  width: 100%;
+  height: 2px;
+  background-color: rgb(230,230,230);
+  margin-bottom: 2em;
+}
+#About p{font-family: 'Bitter', serif;
+padding: 1.5em; 
+  width: 33.333%;
+  text-align: center;
+  float: left;
+  /*margin-left: 2%;
+  margin-right: 2%;*/
+}
+#About p span{
+  font-size: 1.5em;
+}
+.imgcon{
+   width: 33.333%;
+  float: left;
+  /*margin-left:2%;
+  margin-right: 2%;*/
+}
+.myimage{
+  width: 100%;
+  filter: blur(100%);
+  transition: 2s;
+}
+.myimage:hover{
+  filter: none;
+  transition: 1s;
 }
 @media screen and (max-width: 800px){
 	#myimage{
@@ -172,9 +229,7 @@ p.playing{
 	font-weight: 600;
 	}
 }
-figure{
-	position: center;
-}
+
 
 
 
@@ -731,3 +786,183 @@ figure{
 .marker-outline .timeline-item:hover .timeline-marker:before {
   background: #FF6B6B;
 }
+
+
+
+
+
+
+
+
+
+
+
+.footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
